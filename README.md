@@ -3,12 +3,12 @@
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[LGPLv3]([![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 <!-- badges: end -->
 
 Simple matrix operations that can be sped up using Rcpp/RcppArmadillo/RcppEigen
 
-Do expect too much - will probably only add functions and operators as I need them.
+Do not expect too much - will probably only add functions and operators as I need them.
 
 ## Installation
 
