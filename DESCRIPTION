@@ -1,7 +1,7 @@
 Package: FasterMatrixMath
 Type: Package
 Title: Fast(er) matrix math operations
-Version: 1.0
+Version: 1.0.1
 Date: 2020-12-30
 Authors@R: c(person("Miles","Smith",role = c("aut","cre"), email="miles-smith@omrf.org", comment = c(ORCID = "0000-0003-0651-809X")))
 Maintainer: Miles Smith <miles-smith@omrf.org>
