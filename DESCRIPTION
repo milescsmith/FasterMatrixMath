@@ -7,7 +7,11 @@ Authors@R: c(person("Miles","Smith",role = c("aut","cre"), email="miles-smith@om
 Maintainer: Miles Smith <miles-smith@omrf.org>
 Description: Speed up of matrix operations using c++
 License: LGPL (>= 3)
-Imports: Rcpp (>= 1.0.5)
+Imports: 
+    Rcpp
 LinkingTo: Rcpp, RcppEigen
 RoxygenNote: 7.1.1
 Encoding: UTF-8
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
