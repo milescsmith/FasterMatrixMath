@@ -6,6 +6,30 @@
 
 using namespace Rcpp;
 
+// eigenCrossprod
+Eigen::MatrixXd eigenCrossprod(const Eigen::Map<Eigen::MatrixXd> A, const Eigen::Map<Eigen::MatrixXd> B);
+RcppExport SEXP _FasterMatrixMath_eigenCrossprod(SEXP ASEXP, SEXP BSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const Eigen::Map<Eigen::MatrixXd> >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const Eigen::Map<Eigen::MatrixXd> >::type B(BSEXP);
+    rcpp_result_gen = Rcpp::wrap(eigenCrossprod(A, B));
+    return rcpp_result_gen;
+END_RCPP
+}
+// eigenTCrossprod
+Eigen::MatrixXd eigenTCrossprod(const Eigen::Map<Eigen::MatrixXd> A, const Eigen::Map<Eigen::MatrixXd> B);
+RcppExport SEXP _FasterMatrixMath_eigenTCrossprod(SEXP ASEXP, SEXP BSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const Eigen::Map<Eigen::MatrixXd> >::type A(ASEXP);
+    Rcpp::traits::input_parameter< const Eigen::Map<Eigen::MatrixXd> >::type B(BSEXP);
+    rcpp_result_gen = Rcpp::wrap(eigenTCrossprod(A, B));
+    return rcpp_result_gen;
+END_RCPP
+}
 // eigenMapMatMult
 Eigen::MatrixXd eigenMapMatMult(const Eigen::Map<Eigen::MatrixXd> A, Eigen::Map<Eigen::MatrixXd> B);
 RcppExport SEXP _FasterMatrixMath_eigenMapMatMult(SEXP ASEXP, SEXP BSEXP) {
@@ -20,6 +44,8 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_FasterMatrixMath_eigenCrossprod", (DL_FUNC) &_FasterMatrixMath_eigenCrossprod, 2},
+    {"_FasterMatrixMath_eigenTCrossprod", (DL_FUNC) &_FasterMatrixMath_eigenTCrossprod, 2},
     {"_FasterMatrixMath_eigenMapMatMult", (DL_FUNC) &_FasterMatrixMath_eigenMapMatMult, 2},
     {NULL, NULL, 0}
 };
