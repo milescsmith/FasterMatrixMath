@@ -40,5 +40,5 @@ MatCross <- function(A, B) {
 #'
 #' @examples C <- MatMult(A, B)
 MatTCross <- function(A, B) {
-  eigenTcrossprod(A, B)
+  eigenTCrossprod(A, B)
 }
